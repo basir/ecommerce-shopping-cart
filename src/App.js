@@ -78,7 +78,7 @@ class App extends Component {
         <hr />
         <div className="row">
         <div className="col-md-9">
-            <Filter count={this.state.products.length} handleSortChange={this.handleSortChange} 
+            <Filter count={this.state.filteredProducts.length} handleSortChange={this.handleSortChange} 
             handleSizeChange={this.handleSizeChange} />
             <hr />
             <Products products={this.state.filteredProducts} handleAddToCart={this.handleAddToCart} />
