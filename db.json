@@ -7,7 +7,7 @@
       "description": "14/15 s/nº",
       "availableSizes": ["X", "L", "XL", "XXL"],
       "style": "Preta com listras brancas",
-      "price": 10.9,
+      "price": 10,
       "isFreeShipping": true
     },
 
@@ -16,7 +16,7 @@
       "sku": 11854078013954528,
       "title": "Danger Knife Grey",
       "description": "14/15 s/nº",
-      "availableSizes": ["X", "L"],
+      "availableSizes": ["X", "M", "L"],
       "style": "Branco com listras pretas",
       "price": 14.9,
       "isFreeShipping": true
@@ -27,7 +27,7 @@
       "sku": 876661122392077,
       "title": "White DGK Script Tee",
       "description": "2014 s/nº",
-      "availableSizes": ["X", "L"],
+      "availableSizes": ["X", "M", "L"],
       "style": "Preto com listras brancas",
       "price": 14.9,
       "isFreeShipping": true
@@ -87,7 +87,6 @@
       "price": 18.7,
       "isFreeShipping": false
     },
-
     {
       "id": 9,
       "sku": 11600983276356165,
@@ -96,16 +95,6 @@
       "availableSizes": ["L", "XL"],
       "price": 134.9,
       "isFreeShipping": true
-    },
-
-    {
-      "id": 10,
-      "sku": 27250082398145995,
-      "title": "On The Streets Black T-Shirt",
-      "description": "",
-      "availableSizes": ["L", "XL"],
-      "price": 49.0,
-      "isFreeShipping": false
     }
   ]
 }

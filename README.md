@@ -10,9 +10,9 @@ $ yarn
 ## Run Server
 ```
 $ npm install -g json-server
-or
+Then
 $ yarn server
-
+or
 $ json-server db.json --static ./public --port 8000
 ```
 
