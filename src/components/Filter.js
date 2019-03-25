@@ -5,18 +5,18 @@ export default class Products extends Component {
 
 
         return (
-            <div class="row">
-                <div class="col-md-4">
+            <div className="row">
+                <div className="col-md-4">
                     {this.props.count} products found.
             </div>
-                <div class="col-md-4">Order by :
+                <div className="col-md-4">Order by :
                <select value={this.props.sort} onChange={this.props.handleSortChange}>
                         <option value="">Select</option>
                         <option value="lowestprice">Lowest to highest</option>
                         <option value="highestprice">Highest to lowest</option>
                     </select>
                 </div>
-                <div class="col-md-4">
+                <div className="col-md-4">
                     Size  :
                <select value={this.props.size}  onChange={this.props.handleSizeChange}>
                         <option value="">ALL</option>
