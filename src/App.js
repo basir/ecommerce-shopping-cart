@@ -50,18 +50,19 @@ class App extends Component {
     });
   }
   listProducts = () => {
-    this.setState(state => {
-      let products = state.products;
+    this.setState(state => {      
       if (state.sort !== '') {
-        products = state.products.sort((a, b) =>
+         state.products.sort((a, b) =>
           (state.sort === 'lowestprice'
             ? ((a.price > b.price) ? 1 : -1)
-            : ((a.price < b.price) ? 1 : -1)))
+            : ((a.price < b.price) ? 1 : -1)));
+      } else{
+         state.products.sort((a, b)=> (a.id > b.id) ? 1 : -1);
       }
       if (state.size !== '') {
-        products = state.products.filter(a => a.availableSizes.indexOf(state.size.toUpperCase()) >= 0)
+        return { filteredProducts:state.products.filter(a => a.availableSizes.indexOf(state.size.toUpperCase()) >= 0)};
       }
-      return { filteredProducts: products };
+      return { filteredProducts: state.products };
     })
   }
   handleSortChange = (e) => {

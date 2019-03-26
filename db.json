@@ -4,9 +4,8 @@
       "id": 1,
       "sku": 18644119330491312,
       "title": "Sphynx Tie Dye Grey T-Shirt",
-      "description": "14/15 s/nº",
+      "description": "Sphynx Tie Dye Grey",
       "availableSizes": ["X", "L", "XL", "XXL"],
-      "style": "Preta com listras brancas",
       "price": 10,
       "isFreeShipping": true
     },
@@ -14,10 +13,9 @@
     {
       "id": 2,
       "sku": 11854078013954528,
-      "title": "Danger Knife Grey",
-      "description": "14/15 s/nº",
+      "title": "Danger Knife Grey T-Shirt",
+      "description": "Danger Knife Grey",
       "availableSizes": ["X", "M", "L"],
-      "style": "Branco com listras pretas",
       "price": 14.9,
       "isFreeShipping": true
     },
@@ -26,9 +24,8 @@
       "id": 3,
       "sku": 876661122392077,
       "title": "White DGK Script Tee",
-      "description": "2014 s/nº",
+      "description": "White DGK Script",
       "availableSizes": ["X", "M", "L"],
-      "style": "Preto com listras brancas",
       "price": 14.9,
       "isFreeShipping": true
     },
@@ -36,10 +33,9 @@
     {
       "id": 4,
       "sku": 9197907543445677,
-      "title": "Born On The Streets",
-      "description": "14/15 s/nº - Jogador",
+      "title": "Born On The Streets  T-Shirt",
+      "description": "Born On The Streets",
       "availableSizes": ["XL"],
-      "style": "Branco com listras pretas",
       "price": 25.9,
       "isFreeShipping": false
     },
@@ -48,9 +44,8 @@
       "id": 5,
       "sku": 10547961582846888,
       "title": "Tso 3D Short Sleeve T-Shirt A",
-      "description": "14/15 + Camiseta 1º Mundial",
+      "description": "Tso 3D Short Sleeve",
       "availableSizes": ["X", "L", "XL"],
-      "style": "Preto",
       "price": 10.9,
       "isFreeShipping": false
     },
@@ -59,9 +54,8 @@
       "id": 6,
       "sku": 6090484789343891,
       "title": "Man Tie Dye Cinza Grey T-Shirt",
-      "description": "Goleiro 13/14",
+      "description": "Man Tie Dye Cinza Grey",
       "availableSizes": ["XL", "XXL"],
-      "style": "Branco",
       "price": 49.9,
       "isFreeShipping": false
     },
