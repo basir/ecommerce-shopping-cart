@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Products from './components/Products';
+import Basket from './components/Basket';
 import './App.css';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = { cartItems: [] }
+  }
+  handleAddToCart = (e, product) => {
+    this.setState(state => {
+      const cartItems = state.cartItems;
+      cartItems.push({ ...product, count: 1 });
+      return { cartItems: cartItems };
+    })
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="container">
+        <h1>E-commerce Shopping Cart Application</h1>
+        <hr />
+        <Basket cartItems={this.state.cartItems} />
+        <Products handleAddToCart={this.handleAddToCart} />
+
       </div>
     );
   }

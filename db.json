@@ -1,0 +1,111 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "sku": 18644119330491312,
+      "title": "Sphynx Tie Dye Grey T-Shirt",
+      "description": "14/15 s/nº",
+      "availableSizes": ["X", "L", "XL", "XXL"],
+      "style": "Preta com listras brancas",
+      "price": 10.9,
+      "isFreeShipping": true
+    },
+
+    {
+      "id": 2,
+      "sku": 11854078013954528,
+      "title": "Danger Knife Grey",
+      "description": "14/15 s/nº",
+      "availableSizes": ["X", "L"],
+      "style": "Branco com listras pretas",
+      "price": 14.9,
+      "isFreeShipping": true
+    },
+
+    {
+      "id": 3,
+      "sku": 876661122392077,
+      "title": "White DGK Script Tee",
+      "description": "2014 s/nº",
+      "availableSizes": ["X", "L"],
+      "style": "Preto com listras brancas",
+      "price": 14.9,
+      "isFreeShipping": true
+    },
+
+    {
+      "id": 4,
+      "sku": 9197907543445677,
+      "title": "Born On The Streets",
+      "description": "14/15 s/nº - Jogador",
+      "availableSizes": ["XL"],
+      "style": "Branco com listras pretas",
+      "price": 25.9,
+      "isFreeShipping": false
+    },
+
+    {
+      "id": 5,
+      "sku": 10547961582846888,
+      "title": "Tso 3D Short Sleeve T-Shirt A",
+      "description": "14/15 + Camiseta 1º Mundial",
+      "availableSizes": ["X", "L", "XL"],
+      "style": "Preto",
+      "price": 10.9,
+      "isFreeShipping": false
+    },
+
+    {
+      "id": 6,
+      "sku": 6090484789343891,
+      "title": "Man Tie Dye Cinza Grey T-Shirt",
+      "description": "Goleiro 13/14",
+      "availableSizes": ["XL", "XXL"],
+      "style": "Branco",
+      "price": 49.9,
+      "isFreeShipping": false
+    },
+
+    {
+      "id": 7,
+      "sku": 18532669286405342,
+      "title": "Crazy Monkey Black T-Shirt",
+      "description": "1977 Infantil",
+      "availableSizes": ["S"],
+      "style": "Preto com listras brancas",
+      "price": 22.5,
+      "isFreeShipping": true
+    },
+
+    {
+      "id": 8,
+      "sku": 5619496040738316,
+      "title": "Tso 3D Black T-Shirt",
+      "description": "",
+      "availableSizes": ["XL"],
+      "style": "Azul escuro",
+      "price": 18.7,
+      "isFreeShipping": false
+    },
+
+    {
+      "id": 9,
+      "sku": 11600983276356165,
+      "title": "Crazy Monkey Grey",
+      "description": "",
+      "availableSizes": ["L", "XL"],
+      "price": 134.9,
+      "isFreeShipping": true
+    },
+
+    {
+      "id": 10,
+      "sku": 27250082398145995,
+      "title": "On The Streets Black T-Shirt",
+      "description": "",
+      "availableSizes": ["L", "XL"],
+      "price": 49.0,
+      "isFreeShipping": false
+    }
+  ]
+}
