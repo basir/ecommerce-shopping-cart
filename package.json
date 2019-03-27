@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "server": "json-server db.json --static ./public --port 8000",
+    "server": "json-server db.json --port 8000",
     "build": "react-scripts build",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",

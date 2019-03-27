@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Products from './components/Products';
 import Filter from './components/Filter';
 import Basket from './components/Basket';
+import util from './util';
 
 import './App.css';
 
@@ -21,6 +22,7 @@ class App extends Component {
         contentType: 'application/json'
       }
     }).then(res => res.json())
+      .catch(res => util.sampleProducts)
       .then(data => {
         this.setState({ products: data });
         this.listProducts();
@@ -55,7 +57,7 @@ class App extends Component {
       return { cartItems: cartItems };
     });
   }
-  
+
   listProducts = () => {
     this.setState(state => {
       if (state.sort !== '') {
