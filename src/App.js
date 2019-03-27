@@ -17,12 +17,11 @@ class App extends Component {
     }
 
     fetch('http://localhost:8000/products').then(res => res.json())
-    .catch(err=> fetch('db.json').then(res=>res.json()).then(data=>data.products))
+      .catch(err => fetch('db.json').then(res => res.json()).then(data => data.products))
       .then(data => {
         this.setState({ products: data });
         this.listProducts();
-      }
-      );
+      });
   }
 
   handleRemoveFromCart = (e, product) => {
