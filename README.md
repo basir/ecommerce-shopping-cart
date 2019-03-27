@@ -18,7 +18,7 @@ $ npm install -g json-server
 Then
 $ yarn server
 or
-$ json-server db.json --static ./public --port 8000
+$ json-server public/db.json --port 8000
 ```
 
 ## Run App
