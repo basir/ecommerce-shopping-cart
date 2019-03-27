@@ -11,6 +11,11 @@ class App extends Component {
     this.state = { size: '', sort: '', cartItems: [], products: [], filteredProducts: [] };
   }
   componentWillMount() {
+
+    if (localStorage.getItem('cartItems')) {
+      this.setState({ cartItems: JSON.parse(localStorage.getItem('cartItems')) });
+    }
+
     fetch('http://localhost:8000/products', {
       headers: {
         contentType: 'application/json'
@@ -23,9 +28,10 @@ class App extends Component {
       );
   }
 
-  handleARemoveFromCart = (e, product) => {
+  handleRemoveFromCart = (e, product) => {
     this.setState(state => {
       const cartItems = state.cartItems.filter(a => a.id !== product.id);
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
       return { cartItems: cartItems };
     })
   }
@@ -33,7 +39,6 @@ class App extends Component {
   handleAddToCart = (e, product) => {
     this.setState(state => {
       const cartItems = state.cartItems;
-
       let productAlreadyInCart = false;
 
       cartItems.forEach(cp => {
@@ -46,21 +51,23 @@ class App extends Component {
       if (!productAlreadyInCart) {
         cartItems.push({ ...product, count: 1 });
       }
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
       return { cartItems: cartItems };
     });
   }
+  
   listProducts = () => {
-    this.setState(state => {      
+    this.setState(state => {
       if (state.sort !== '') {
-         state.products.sort((a, b) =>
+        state.products.sort((a, b) =>
           (state.sort === 'lowestprice'
             ? ((a.price > b.price) ? 1 : -1)
             : ((a.price < b.price) ? 1 : -1)));
-      } else{
-         state.products.sort((a, b)=> (a.id > b.id) ? 1 : -1);
+      } else {
+        state.products.sort((a, b) => (a.id > b.id) ? 1 : -1);
       }
       if (state.size !== '') {
-        return { filteredProducts:state.products.filter(a => a.availableSizes.indexOf(state.size.toUpperCase()) >= 0)};
+        return { filteredProducts: state.products.filter(a => a.availableSizes.indexOf(state.size.toUpperCase()) >= 0) };
       }
       return { filteredProducts: state.products };
     })
@@ -87,7 +94,7 @@ class App extends Component {
             <Products products={this.state.filteredProducts} handleAddToCart={this.handleAddToCart} />
           </div>
           <div className="col-md-3">
-            <Basket cartItems={this.state.cartItems} handleARemoveFromCart={this.handleARemoveFromCart} />
+            <Basket cartItems={this.state.cartItems} handleRemoveFromCart={this.handleRemoveFromCart} />
           </div>
 
         </div>
