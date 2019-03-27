@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Products from './components/Products';
 import Filter from './components/Filter';
 import Basket from './components/Basket';
-import util from './util';
 
 import './App.css';
 
@@ -17,12 +16,8 @@ class App extends Component {
       this.setState({ cartItems: JSON.parse(localStorage.getItem('cartItems')) });
     }
 
-    fetch('http://localhost:8000/products', {
-      headers: {
-        contentType: 'application/json'
-      }
-    }).then(res => res.json())
-      .catch(res => util.sampleProducts)
+    fetch('http://localhost:8000/products').then(res => res.json())
+    .catch(err=> fetch('db.json').then(res=>res.json()).then(data=>data.products))
       .then(data => {
         this.setState({ products: data });
         this.listProducts();
