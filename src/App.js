@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import {Provider} from 'react-redux';
+import {createStore} from 'redux';
 import Products from './components/Products';
 import Filter from './components/Filter';
 import Basket from './components/Basket';
-
 import './App.css';
+
+const store = createStore(()=>{}, {});
 
 class App extends Component {
   constructor() {
@@ -79,6 +82,7 @@ class App extends Component {
 
   render() {
     return (
+      <Provider store={store}>
       <div className="container">
         <h1>E-commerce Shopping Cart Application</h1>
         <hr />
@@ -96,6 +100,7 @@ class App extends Component {
         </div>
 
       </div>
+      </Provider>
     );
   }
 }
