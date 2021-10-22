@@ -1,4 +1,4 @@
-# E-commerce Shopping Cart Application
+# E-commerce Shopping Cart Application For International Users as well as Local Users 
 Learn React & Redux From 0 to 100 in this course at https://codingwithbasir.com
 
 ## Demo
@@ -21,7 +21,7 @@ or
 $ json-server public/db.json --port 8000
 ```
 
-## Run App
+## Run App 
 ```
 $ yarn start
 ```
