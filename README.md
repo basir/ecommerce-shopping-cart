@@ -1,4 +1,4 @@
-# E-commerce Shopping Cart Application For International Users
+# E-commerce Shopping Cart Application For International Users as well as Local Users 
 Learn React & Redux From 0 to 100 in this course at https://codingwithbasir.com
 
 ## Demo
